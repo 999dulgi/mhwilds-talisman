@@ -9,7 +9,7 @@ import { ThemeContext } from './theme';
 
 export default function Home() {
   const skillsData = skillData;
-  const [result, setResult] = React.useState('');
+  const [result, setResult] = React.useState(0);
   const [skill1, setSkill1] = React.useState({ id: 0, level: 0 });
   const [skill2, setSkill2] = React.useState({ id: 0, level: 0 });
   const [skill3, setSkill3] = React.useState({ id: 0, level: 0 });
@@ -18,13 +18,13 @@ export default function Home() {
   const [jewel3, setJewel3] = React.useState(0);
   const [init, setInit] = React.useState(0);
 
-  const resultText = {
-    "S": { title: "신급 호석", description: "종결 호석입니다. 어느 상황에서든 활용할 수 있습니다." },
-    "A": { title: "강력한 호석", description: "고성능 호석입니다. 많은 상황에서 쓸 수 있는 호석입니다." },
-    "B": { title: "좋은 호석", description: "꽤 좋은 호석입니다. 특정 세팅에서 활용할 수 있습니다." },
-    "C": { title: "평범한 호석", description: "표준적인 성능의 호석입니다." },
-    "D": { title: "쓰레기 호석", description: "다른 호석을 찾는게 낫습니다." }
-  }
+  const resultText = [
+    { grade: "S", title: "신급 호석", description: "종결 호석입니다. 어느 상황에서든 활용할 수 있습니다." },
+    { grade: "A", title: "강력한 호석", description: "고성능 호석입니다. 많은 상황에서 쓸 수 있는 호석입니다." },
+    { grade: "B", title: "좋은 호석", description: "꽤 좋은 호석입니다. 특정 세팅에서 활용할 수 있습니다." },
+    { grade: "C", title: "평범한 호석", description: "표준적인 성능의 호석입니다." },
+    { grade: "D", title: "쓰레기 호석", description: "다른 호석을 찾는게 낫습니다." }
+  ]
 
   const handleSkill1Change = (value: number, level?: number) => {
     if (level !== undefined) {
@@ -113,15 +113,15 @@ export default function Home() {
     }
 
     if (score >= 50000) {
-      setResult("S");
+      setResult(1);
     } else if (score >= 30000) {
-      setResult("A");
+      setResult(2);
     } else if (score > 20000) {
-      setResult("B");
+      setResult(3);
     } else if (score > 10000) {
-      setResult("C");
+      setResult(4);
     } else {
-      setResult("D");
+      setResult(5);
     }
   };
 
@@ -133,25 +133,25 @@ export default function Home() {
     setJewel1(0);
     setJewel2(0);
     setJewel3(0);
-    setResult("");
+    setResult(0);
   };
 
   const theme = useTheme();
   const colorMode = React.useContext(ThemeContext);
-  
+
   return (
-    <Box sx={{ 
-      display: "flex", 
-      flexDirection: "column", 
-      alignItems: "center", 
-      justifyContent: "center", 
+    <Box sx={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
       minHeight: "100vh",
       width: "100%",
       padding: "20px 0",
       backgroundColor: theme.palette.background.default,
       color: theme.palette.text.primary
     }}>
-      <Box sx={{ 
+      <Box sx={{
         position: 'absolute',
         top: 20,
         right: 20,
@@ -160,19 +160,19 @@ export default function Home() {
           {theme.palette.mode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
         </IconButton>
       </Box>
-      
+
       <Typography variant="h4" fontWeight="bold" sx={{ color: theme.palette.primary.main }}>와일즈 호석 등급 판별기</Typography>
-      <Box sx={{ 
-        display: "flex", 
-        flexDirection: "column", 
-        alignItems: "center", 
-        justifyContent: "center", 
-        width: "500px", 
+      <Box sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "500px",
         marginTop: 4,
         backgroundColor: theme.palette.background.paper,
         padding: 4,
         borderRadius: 2,
-        boxShadow: theme.palette.mode === 'dark' ? '0 4px 20px rgba(0, 0, 0, 0.5)' : '0 4px 20px rgba(0, 0, 0, 0.1)' 
+        boxShadow: theme.palette.mode === 'dark' ? '0 4px 20px rgba(0, 0, 0, 0.5)' : '0 4px 20px rgba(0, 0, 0, 0.1)'
       }}>
         <Grid container spacing={2} >
           <Grid size={8}>
@@ -306,33 +306,33 @@ export default function Home() {
         </Grid>
 
         <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 4, marginTop: 2 }}>
-          <Button 
-            variant="contained" 
-            sx={{ 
-              width: 100, 
+          <Button
+            variant="contained"
+            sx={{
+              width: 100,
               height: 40,
               fontWeight: 'bold',
               color: theme.palette.primary.contrastText
-            }} 
+            }}
             onClick={() => calculate()}
           >계산</Button>
-          <Button 
-            variant="outlined" 
-            sx={{ 
-              width: 100, 
+          <Button
+            variant="outlined"
+            sx={{
+              width: 100,
               height: 40,
               fontWeight: 'bold'
-            }} 
+            }}
             onClick={() => reset()}
           >초기화</Button>
         </Box>
-        {result ?
+        {result !== 0 ?
           (
             <>
               <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 1, marginTop: 2 }}>
-                <Typography variant="h1" fontWeight="bold" sx={{ color: theme.palette.mode === 'dark' ? theme.palette.primary.main : '#fdb35c' }}>{result}</Typography>
-                <Typography variant="h6" fontWeight="bold" sx={{ color: theme.palette.text.primary }}>{resultText[result].title}</Typography>
-                <Typography variant="h6" fontWeight="regular" sx={{ textAlign: "center", color: theme.palette.text.secondary }}>{resultText[result].description}</Typography>
+                <Typography variant="h1" fontWeight="bold" sx={{ color: theme.palette.mode === 'dark' ? theme.palette.primary.main : '#fdb35c' }}>{resultText[result - 1].grade}</Typography>
+                <Typography variant="h6" fontWeight="bold" sx={{ color: theme.palette.text.primary }}>{resultText[result - 1].title}</Typography>
+                <Typography variant="h6" fontWeight="regular" sx={{ textAlign: "center", color: theme.palette.text.secondary }}>{resultText[result - 1].description}</Typography>
               </Box>
             </>
           ) : null}

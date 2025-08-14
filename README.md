@@ -3,3 +3,5 @@
 어떤 호석이 좋은지 헷갈리는 사람들을 위한 호석 판별기입니다.
 
 https://game8.jp/mhwilds/710441 에 있는 호석 판별기를 한국어로 옮긴 버전입니다.
+
+페이지 주소 : https://999dulgi.github.io/mhwilds-talisman/

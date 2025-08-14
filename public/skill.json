@@ -1,0 +1,728 @@
+[
+    {
+        "id": 1,
+        "title": "회복 속도",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 2,
+        "title": "만족감",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 3,
+        "title": "스태미나 급속 회복",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 4,
+        "title": "정령의 가호",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 5,
+        "title": "기절 내성",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 6,
+        "title": "숫돌 사용 고속화",
+        "level": 2,
+        "score": 5000
+    },
+    {
+        "id": 7,
+        "title": "탄도 강화",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 8,
+        "title": "빨리 먹기",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 9,
+        "title": "보머",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 10,
+        "title": "속박 내성",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 11,
+        "title": "얼음 내성",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 12,
+        "title": "클라이머",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 13,
+        "title": "물가/기름 진흙 적응",
+        "level": 2,
+        "score": 100
+    },
+    {
+        "id": 14,
+        "title": "식생학",
+        "level": 4,
+        "score": 100
+    },
+    {
+        "id": 15,
+        "title": "지질학",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 16,
+        "title": "곤충 박사",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 17,
+        "title": "뛰어들기",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 18,
+        "title": "불 내성",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 19,
+        "title": "내진",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 20,
+        "title": "물 내성",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 21,
+        "title": "환경 이용 지식",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 22,
+        "title": "체력 회복량 UP",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 23,
+        "title": "마비 내성",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 24,
+        "title": "악취 내성",
+        "level": 2,
+        "score": 100
+    },
+    {
+        "id": 25,
+        "title": "버섯 애호가",
+        "level": 3,
+        "score": 1250
+    },
+    {
+        "id": 26,
+        "title": "회피 거리 UP",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 27,
+        "title": "납도술",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 28,
+        "title": "배고픔 내성",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 29,
+        "title": "아이템 사용 강화",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 30,
+        "title": "풍압 내성",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 31,
+        "title": "움찔 감소",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 32,
+        "title": "광역화",
+        "level": 5,
+        "score": 100
+    },
+    {
+        "id": 33,
+        "title": "수면 내성",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 34,
+        "title": "독 내성",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 35,
+        "title": "급습",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 36,
+        "title": "회피 성능",
+        "level": 5,
+        "score": 2500
+    },
+    {
+        "id": 37,
+        "title": "폭파 피해 내성",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 38,
+        "title": "파괴왕",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 39,
+        "title": "점프 철인",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 40,
+        "title": "정비",
+        "level": 5,
+        "score": 100
+    },
+    {
+        "id": 41,
+        "title": "완전 충전",
+        "level": 5,
+        "score": 2500
+    },
+    {
+        "id": 42,
+        "title": "체술",
+        "level": 5,
+        "score": 1800
+    },
+    {
+        "id": 43,
+        "title": "힘의 해방",
+        "level": 5,
+        "score": 5000
+    },
+    {
+        "id": 44,
+        "title": "앙심",
+        "level": 5,
+        "score": 1250
+    },
+    {
+        "id": 45,
+        "title": "방어력 DOWN 내성",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 46,
+        "title": "런너",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 47,
+        "title": "재난대처능력",
+        "level": 5,
+        "score": 1250
+    },
+    {
+        "id": 48,
+        "title": "위협",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 49,
+        "title": "약점 특효",
+        "level": 5,
+        "score": 10000
+    },
+    {
+        "id": 50,
+        "title": "연격",
+        "level": 5,
+        "score": 10000
+    },
+    {
+        "id": 51,
+        "title": "열상 내성",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 52,
+        "title": "혼신",
+        "level": 3,
+        "score": 4000
+    },
+    {
+        "id": 53,
+        "title": "속성 피해 내성",
+        "level": 3,
+        "score": 100
+    },
+    {
+        "id": 54,
+        "title": "쇄인자격",
+        "level": 5,
+        "score": 1250
+    },
+    {
+        "id": 55,
+        "title": "피리 명인",
+        "level": 2,
+        "score": 15000
+    },
+    {
+        "id": 56,
+        "title": "KO술",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 57,
+        "title": "차지 마스터",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 58,
+        "title": "칼날 연마",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 59,
+        "title": "스태미나 탈취",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 60,
+        "title": "모으기 타격 강화",
+        "level": 1,
+        "score": 15000
+    },
+    {
+        "id": 61,
+        "title": "포술",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 62,
+        "title": "발도술 [힘]",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 63,
+        "title": "강화 지속",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 64,
+        "title": "고속 변형",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 65,
+        "title": "집중",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 66,
+        "title": "가드 강화",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 67,
+        "title": "회심격 [속성]",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 68,
+        "title": "간파",
+        "level": 5,
+        "score": 7500
+    },
+    {
+        "id": 69,
+        "title": "발도술[기]",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 70,
+        "title": "공격",
+        "level": 5,
+        "score": 10000
+    },
+    {
+        "id": 71,
+        "title": "가드 성능",
+        "level": 3,
+        "score": 7500
+    },
+    {
+        "id": 72,
+        "title": "공격적인 방어",
+        "level": 3,
+        "score": 7500
+    },
+    {
+        "id": 73,
+        "title": "비연",
+        "level": 1,
+        "score": 22500
+    },
+    {
+        "id": 74,
+        "title": "포탄 장전",
+        "level": 2,
+        "score": 15000
+    },
+    {
+        "id": 75,
+        "title": "달인의 재주",
+        "level": 1,
+        "score": 15000
+    },
+    {
+        "id": 76,
+        "title": "회심격 [특수]",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 77,
+        "title": "특수 사격 강화",
+        "level": 2,
+        "score": 10000
+    },
+    {
+        "id": 78,
+        "title": "포스샷",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 79,
+        "title": "퍼스트샷",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 80,
+        "title": "무아지경",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 81,
+        "title": "전화위복",
+        "level": 3,
+        "score": 1250
+    },
+    {
+        "id": 82,
+        "title": "공세",
+        "level": 5,
+        "score": 2500
+    },
+    {
+        "id": 83,
+        "title": "용 내성",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 84,
+        "title": "번개 내성",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 85,
+        "title": "방어",
+        "level": 7,
+        "score": 1250
+    },
+    {
+        "id": 86,
+        "title": "교격",
+        "level": 5,
+        "score": 7500
+    },
+    {
+        "id": 87,
+        "title": "완충",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 88,
+        "title": "귀마개",
+        "level": 3,
+        "score": 4000
+    },
+    {
+        "id": 89,
+        "title": "연찬",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 90,
+        "title": "도전자",
+        "level": 5,
+        "score": 10000
+    },
+    {
+        "id": 91,
+        "title": "환경 적응",
+        "level": 2,
+        "score": 100
+    },
+    {
+        "id": 92,
+        "title": "역습",
+        "level": 3,
+        "score": 4000
+    },
+    {
+        "id": 93,
+        "title": "폭파병 추가",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 94,
+        "title": "수면병 추가",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 95,
+        "title": "마비병 추가",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 96,
+        "title": "독병 추가",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 97,
+        "title": "속사 강화",
+        "level": 1,
+        "score": 22500
+    },
+    {
+        "id": 98,
+        "title": "산탄/강사 강화",
+        "level": 1,
+        "score": 22500
+    },
+    {
+        "id": 99,
+        "title": "관통탄/용화살 강화",
+        "level": 1,
+        "score": 15000
+    },
+    {
+        "id": 100,
+        "title": "통상탄/통상화살 강화",
+        "level": 1,
+        "score": 5000
+    },
+    {
+        "id": 101,
+        "title": "둔기 사용",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 102,
+        "title": "심안",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 103,
+        "title": "명검",
+        "level": 3,
+        "score": 10000
+    },
+    {
+        "id": 104,
+        "title": "장인",
+        "level": 5,
+        "score": 10000
+    },
+    {
+        "id": 105,
+        "title": "폭파속성 강화",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 106,
+        "title": "수면속성 강화",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 107,
+        "title": "마비속성 강화",
+        "level": 3,
+        "score": 2500
+    },
+    {
+        "id": 108,
+        "title": "독속성 강화",
+        "level": 3,
+        "score": 1500
+    },
+    {
+        "id": 109,
+        "title": "용속성 공격 강화",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 110,
+        "title": "얼음속성 공격 강화",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 111,
+        "title": "번개속성 공격 강화",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 112,
+        "title": "물속성 공격 강화",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 113,
+        "title": "불속성 공격 강화",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 114,
+        "title": "슈퍼회심",
+        "level": 5,
+        "score": 20000
+    },
+    {
+        "id": 115,
+        "title": "섬광 강화",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 116,
+        "title": "헌터 생활",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 117,
+        "title": "동반자 지휘",
+        "level": 5,
+        "score": 100
+    },
+    {
+        "id": 118,
+        "title": "속성 변환",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 119,
+        "title": "속성 흡수",
+        "level": 3,
+        "score": 5000
+    },
+    {
+        "id": 120,
+        "title": "독 대미지 강화",
+        "level": 1,
+        "score": 100
+    },
+    {
+        "id": 121,
+        "title": "멸기병 추가",
+        "level": 1,
+        "score": 100
+    }
+]

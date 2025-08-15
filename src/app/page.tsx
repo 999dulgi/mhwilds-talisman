@@ -167,7 +167,7 @@ export default function Home() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        width: "500px",
+        maxWidth: "500px",
         marginTop: 4,
         backgroundColor: theme.palette.background.paper,
         padding: 4,
@@ -185,14 +185,13 @@ export default function Home() {
             />
           </Grid>
           <Grid size={4}>
-            <FormControl>
+            <FormControl sx={{ width: "100%" }}>
               <InputLabel id="skill1-level">레벨</InputLabel>
               <Select
                 labelId="skill1-level"
                 value={skill1.level}
                 onChange={(event) => handleSkill1Change(skill1.id, event.target.value)}
                 label="레벨"
-                sx={{ width: 135 }}
               >
                 {Array.from({ length: findSkill(skill1.id)?.level || 0 }, (_, index) => index + 1).map((level) => (
                   <MenuItem key={level} value={level}>
@@ -212,14 +211,13 @@ export default function Home() {
             />
           </Grid>
           <Grid size={4}>
-            <FormControl>
+            <FormControl sx={{ width: "100%" }}>
               <InputLabel id="skill2-level">레벨</InputLabel>
               <Select
                 labelId="skill2-level"
                 value={skill2.level}
                 onChange={(event) => handleSkill2Change(skill2.id, event.target.value)}
                 label="레벨"
-                sx={{ width: 135 }}
               >
                 {Array.from({ length: findSkill(skill2.id)?.level || 0 }, (_, index) => index + 1).map((level) => (
                   <MenuItem key={level} value={level}>
@@ -239,14 +237,13 @@ export default function Home() {
             />
           </Grid>
           <Grid size={4}>
-            <FormControl>
+            <FormControl sx={{ width: "100%" }}>
               <InputLabel id="skill3-level">레벨</InputLabel>
               <Select
                 labelId="skill3-level"
                 value={skill3.level}
                 onChange={(event) => handleSkill3Change(skill3.id, event.target.value)}
                 label="레벨"
-                sx={{ width: 135 }}
               >
                 {Array.from({ length: findSkill(skill3.id)?.level || 0 }, (_, index) => index + 1).map((level) => (
                   <MenuItem key={level} value={level}>
@@ -257,14 +254,13 @@ export default function Home() {
             </FormControl>
           </Grid>
           <Grid size={4}>
-            <FormControl>
+            <FormControl sx={{ width: "100%" }}>
               <InputLabel id="jewel1-type">장식주 슬롯 1</InputLabel>
               <Select
                 labelId="jewel1-type"
                 value={jewel1}
                 onChange={(event) => handleJewel1Change(event.target.value)}
                 label="장식주 슬롯"
-                sx={{ width: 135 }}
               >
                 <MenuItem value={0}>방어구1</MenuItem>
                 <MenuItem value={1}>방어구2</MenuItem>
@@ -274,14 +270,13 @@ export default function Home() {
             </FormControl>
           </Grid>
           <Grid size={4}>
-            <FormControl>
+            <FormControl sx={{ width: "100%" }}>
               <InputLabel id="jewel2-type">장식주 슬롯 2</InputLabel>
               <Select
                 labelId="jewel2-type"
                 value={jewel2}
                 onChange={(event) => handleJewel2Change(event.target.value)}
                 label="장식주 슬롯"
-                sx={{ width: 135 }}
               >
                 <MenuItem value={0}>없음</MenuItem>
                 <MenuItem value={1}>방어구1</MenuItem>
@@ -289,14 +284,13 @@ export default function Home() {
             </FormControl>
           </Grid>
           <Grid size={4}>
-            <FormControl>
+            <FormControl sx={{ width: "100%" }}>
               <InputLabel id="jewel3-type">장식주 슬롯 3</InputLabel>
               <Select
                 labelId="jewel3-type"
                 value={jewel3}
                 onChange={(event) => handleJewel3Change(event.target.value)}
                 label="장식주 슬롯"
-                sx={{ width: 135 }}
               >
                 <MenuItem value={0}>없음</MenuItem>
                 <MenuItem value={1}>방어구1</MenuItem>

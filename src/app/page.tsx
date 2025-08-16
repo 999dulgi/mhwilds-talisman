@@ -8,8 +8,9 @@ import skillData from "../../public/skill.json";
 import { ThemeContext } from './theme';
 
 export default function Home() {
-  const skillsData = skillData;
+  const skillsData = skillData.sort((a, b) => a.title.localeCompare(b.title));
   const [result, setResult] = React.useState(0);
+  const [score, setScore] = React.useState(0);
   const [skill1, setSkill1] = React.useState({ id: 0, level: 0 });
   const [skill2, setSkill2] = React.useState({ id: 0, level: 0 });
   const [skill3, setSkill3] = React.useState({ id: 0, level: 0 });
@@ -111,6 +112,7 @@ export default function Home() {
         score += 10000;
         break;
     }
+    setScore(score);
 
     if (score >= 50000) {
       setResult(1);
@@ -134,6 +136,7 @@ export default function Home() {
     setJewel2(0);
     setJewel3(0);
     setResult(0);
+    setScore(0);
   };
 
   const theme = useTheme();
@@ -325,6 +328,7 @@ export default function Home() {
             <>
               <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 1, marginTop: 2 }}>
                 <Typography variant="h1" fontWeight="bold" sx={{ color: theme.palette.mode === 'dark' ? theme.palette.primary.main : '#fdb35c' }}>{resultText[result - 1].grade}</Typography>
+                <Typography variant="h6" fontWeight="bold" sx={{ color: theme.palette.mode === 'dark' ? theme.palette.primary.main : '#fdb35c' }}>{score}</Typography>
                 <Typography variant="h6" fontWeight="bold" sx={{ color: theme.palette.text.primary }}>{resultText[result - 1].title}</Typography>
                 <Typography variant="h6" fontWeight="regular" sx={{ textAlign: "center", color: theme.palette.text.secondary }}>{resultText[result - 1].description}</Typography>
               </Box>
